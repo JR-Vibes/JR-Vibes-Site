@@ -362,39 +362,40 @@ form button {
   <section id="cadastro-promocoes">
   <h2>Receba Promoções e Novidades</h2>
   <p>Cadastre-se para ficar por dentro das ofertas exclusivas:</p>
-  <form action="https://docs.google.com/forms/d/e/1FAIpQLSd6TvQhdr8RtaQgz_Si4mes6MIlovjAaetDA8WqmUe7gRwRDg/formResponse" method="POST" target="_blank" class="formulario-promocoes">
+
+  <form id="form-promocoes" class="formulario-promocoes">
     <input type="text" name="entry.1357278928" placeholder="Seu nome" required>
     <input type="email" name="entry.786914699" placeholder="Seu e-mail" required>
     <input type="tel" name="entry.1287167829" placeholder="WhatsApp" required>
     <button type="submit">Quero Receber Ofertas</button>
   </form>
+
+  <p id="mensagem-sucesso" style="display: none; color: green; font-weight: bold; margin-top: 10px;">
+    🎉 Cadastro enviado com sucesso! Obrigado por se inscrever.
+  </p>
 </section>
 
   <script>
-  const form = document.getElementById('depoimento-form');
-  const lista = document.getElementById('lista-depoimentos');
+  const form = document.getElementById("form-promocoes");
+  const mensagem = document.getElementById("mensagem-sucesso");
 
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    const nome = document.getElementById('nome-depoente').value;
-    const nota = document.getElementById('nota').value;
-    const comentario = document.getElementById('comentario').value;
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // Impede que o formulário recarregue a página
 
-    const estrela = '★'.repeat(nota) + '☆'.repeat(5 - nota);
+    const dados = new FormData(form);
 
-    const div = document.createElement('div');
-    div.className = 'depoimento';
-    div.innerHTML = `
-      <p class="estrelas">${estrela}</p>
-      <p>"${comentario}"</p>
-      <strong>— ${nome}</strong>
-    `;
-
-    lista.prepend(div);
-    form.reset();
+    fetch("https://docs.google.com/forms/d/e/1FAIpQLSd6TvQhdr8RtaQgz_Si4mes6MIlovjAaetDA8WqmUe7gRwRDg/formResponse", {
+      method: "POST",
+      body: dados,
+      mode: "no-cors" // Impede o erro de CORS e deixa silencioso
+    }).then(() => {
+      form.reset(); // Limpa o formulário
+      mensagem.style.display = "block"; // Mostra a mensagem de sucesso
+    }).catch(() => {
+      alert("Erro ao enviar. Tente novamente mais tarde.");
+    });
   });
 </script>
-
   
     <footer>
     <p>JR Vibes Sublimação © 2025</p>
