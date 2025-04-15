@@ -42,46 +42,32 @@
     }
     .produtos {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
       margin-top: 2rem;
+      justify-items: center;
     }
     .produto {
       background: white;
       padding: 1rem;
       border-radius: 12px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 450px;
     }
-    .produto img {
-      max-width: 100%;
+    .duas-imagens {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .duas-imagens img {
+      width: 48%;
       border-radius: 8px;
     }
     .produto h3 {
       margin-top: 0.8rem;
       font-size: 1.1rem;
-      color: #1d2d50;
-    }
-    .subgaleria {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 1rem;
-    }
-    .subgaleria .item {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 1rem;
-      width: 220px;
-    }
-    .subgaleria .item img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-    .subgaleria .item p {
-      margin-top: 0.5rem;
-      font-weight: bold;
       color: #1d2d50;
     }
     footer {
@@ -106,56 +92,61 @@
   <header>
     <img src="logo-jrvibes.png" alt="JR Vibes Logo">
   </header>  
-  
+
   <div class="hero">
     <h1>Transformando momentos em arte, com carinho e personalidade.</h1>
     <p>Seja bem-vindo à JR Vibes Sublimação! Aqui cada detalhe é feito com amor para eternizar lembranças e criar presentes únicos. Personalize, emocione e surpreenda!</p>
   </div>  
-  
+
   <section>
     <h2>Nossos Produtos</h2>
     <div class="produtos">
       
       <!-- CANECAS COM DUAS IMAGENS -->
       <div class="produto">
-        <h3>Canecas Personalizadas</h3>
-        <div class="subgaleria">
-          <div class="item">
-            <img src="imagens/Caneca 01.jpg" alt="Caneca 01">
-            <p>Caneca - Eu amo você</p>
-          </div>
-          <div class="item">
-            <img src="imagens/Caneca 02.jpg" alt="Caneca 02">
-            <p>Caneca - Patoda Vida</p>
-          </div>
+        <div class="duas-imagens">
+          <img src="imagens/caneca1.jpg" alt="Caneca 01">
+          <img src="imagens/caneca2.jpg" alt="Caneca 02">
         </div>
+        <h3>Canecas Personalizadas</h3>
       </div>
 
-      <!-- OUTROS PRODUTOS -->
+      <!-- CAMISETAS -->
       <div class="produto">
-        <img src="camiseta.jpg" alt="Camiseta personalizada">
-        <h3>Camisetas</h3>
+        <div class="duas-imagens">
+          <img src="imagens/camiseta1.jpg" alt="Camiseta 01">
+          <img src="imagens/camiseta2.jpg" alt="Camiseta 02">
+        </div>
+        <h3>Camisetas Personalizadas</h3>
       </div>
 
+      <!-- MOUSEPADS -->
       <div class="produto">
-        <img src="mousepad.jpg" alt="Mouse pad personalizado">
-        <h3>Mouse Pads</h3>
+        <div class="duas-imagens">
+          <img src="imagens/mousepad1.jpg" alt="Mousepad 01">
+          <img src="imagens/mousepad2.jpg" alt="Mousepad 02">
+        </div>
+        <h3>Mouse Pads Personalizados</h3>
       </div>
 
+      <!-- CHAVEIROS -->
       <div class="produto">
-        <img src="imagens/Chaveiro 01.jpg" alt="Chaveiro personalizado">
-        <h3>Chaveiros</h3>
+        <div class="duas-imagens">
+          <img src="imagens/chaveiro1.jpg" alt="Chaveiro 01">
+          <img src="imagens/chaveiro2.jpg" alt="Chaveiro 02">
+        </div>
+        <h3>Chaveiros Personalizados</h3>
       </div>
 
     </div>
   </section>  
-  
+
   <section>
     <h2>Entre em Contato</h2>
     <p>Quer pedir um orçamento ou tirar dúvidas?</p>
     <a href="https://wa.me/5541992619813" target="_blank" class="botao">Fale conosco pelo WhatsApp</a>
   </section>  
-  
+
   <footer>
     <p>JR Vibes Sublimação © 2025</p>
   </footer>
