@@ -1,101 +1,163 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JR Vibes Sublimação</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Quicksand', sans-serif;
+    }
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      margin: 0;
-      padding: 0;
-      color: #333;
+      background: #f9f9f9;
+      color: #1d2d50;
     }
-
     header {
-      background-color: #0d47a1;
+      background-color: #1d2d50;
       color: white;
-      padding: 20px;
+      padding: 2rem;
       text-align: center;
     }
-
+    header img {
+      max-width: 150px;
+    }
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #3e5067;
+    }
     section {
-      padding: 20px;
-    }
-
-    h1, h2 {
-      color: #0d47a1;
-    }
-
-    .produtos {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .produto {
-      background-color: white;
-      border-radius: 15px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      width: 250px;
-      padding: 15px;
+      padding: 3rem 2rem;
       text-align: center;
     }
-
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .produto {
+      background: white;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
     .produto img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
+      max-width: 100%;
+      border-radius: 8px;
     }
-
-    .produto p {
-      margin-top: 10px;
+    .produto h3 {
+      margin-top: 0.8rem;
+      font-size: 1.1rem;
+      color: #1d2d50;
+    }
+    .subgaleria {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .subgaleria .item {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 1rem;
+      width: 220px;
+    }
+    .subgaleria .item img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .subgaleria .item p {
+      margin-top: 0.5rem;
       font-weight: bold;
-      font-size: 16px;
-      color: #0d47a1;
+      color: #1d2d50;
     }
-
-    .contato {
-      margin-top: 40px;
+    footer {
+      background-color: #1d2d50;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+    a.botao {
+      background: #1d2d50;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      display: inline-block;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 1rem;
     }
   </style>
 </head>
-<body>
+<body>  
   <header>
-    <h1>JR Vibes Sublimação</h1>
-    <p>Personalize sua vida com estilo!</p>
-  </header>
-
+    <img src="logo-jrvibes.png" alt="JR Vibes Logo">
+  </header>  
+  
+  <div class="hero">
+    <h1>Transformando momentos em arte, com carinho e personalidade.</h1>
+    <p>Seja bem-vindo à JR Vibes Sublimação! Aqui cada detalhe é feito com amor para eternizar lembranças e criar presentes únicos. Personalize, emocione e surpreenda!</p>
+  </div>  
+  
   <section>
-    <h2>Produtos</h2>
+    <h2>Nossos Produtos</h2>
     <div class="produtos">
+      
+      <!-- CANECAS COM DUAS IMAGENS -->
       <div class="produto">
-        <div style="display: flex; gap: 20px;">
-        <img src="imagens/Caneca 01.jpg" alt="Caneca Eu amo você" />
-        <img src="imagens/Caneca 02.jpg" alt="Caneca Te amo patoda vida" />
-        <p>Caneca Personalizada - Eu amo você</p>
+        <h3>Canecas Personalizadas</h3>
+        <div class="subgaleria">
+          <div class="item">
+            <img src="imagens/Caneca 01.jpg" alt="Caneca 01">
+            <p>Caneca - Eu amo você</p>
+          </div>
+          <div class="item">
+            <img src="imagens/Caneca 02.jpg" alt="Caneca 02">
+            <p>Caneca - Patoda Vida</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- OUTROS PRODUTOS -->
+      <div class="produto">
+        <img src="camiseta.jpg" alt="Camiseta personalizada">
+        <h3>Camisetas</h3>
       </div>
 
       <div class="produto">
-        <img src="imagens/Caneca 02.jpg" alt="Caneca Te amo patoda vida" />
-        <p>Caneca Personalizada - Patoda Vida</p>
+        <img src="mousepad.jpg" alt="Mouse pad personalizado">
+        <h3>Mouse Pads</h3>
       </div>
 
       <div class="produto">
-        <img src="imagens/Chaveiro 01.jpg" alt="Chaveiro professora" />
-        <p>Chaveiro Personalizado - Professora</p>
+        <img src="imagens/Chaveiro 01.jpg" alt="Chaveiro personalizado">
+        <h3>Chaveiros</h3>
       </div>
 
-      <!-- Adicione mais produtos aqui copiando o bloco acima -->
     </div>
-  </section>
-
-  <section class="contato">
-    <h2>Contato</h2>
-    <p>WhatsApp: <a href="https://wa.me/5541992619813" target="_blank">(41) 99261-9813</a></p>
-    <p>Instagram: <a href="https://instagram.com/jrvibessublimacoes" target="_blank">@jrvibessublimacoes</a></p>
-  </section>
+  </section>  
+  
+  <section>
+    <h2>Entre em Contato</h2>
+    <p>Quer pedir um orçamento ou tirar dúvidas?</p>
+    <a href="https://wa.me/5541992619813" target="_blank" class="botao">Fale conosco pelo WhatsApp</a>
+  </section>  
+  
+  <footer>
+    <p>JR Vibes Sublimação © 2025</p>
+  </footer>
 </body>
 </html>
