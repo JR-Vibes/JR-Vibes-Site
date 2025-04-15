@@ -357,7 +357,33 @@ form button {
     <p>Quer pedir um orçamento ou tirar dúvidas?</p>
     <a href="https://wa.me/5541992619813" target="_blank" class="botao-whatsapp">Fale conosco pelo WhatsApp</a>
     <a href="https://www.instagram.com/jrvibessublimacoes/" target="_blank" class="botao-instagram">Veja mais pelo nosso Instagram</a>
-  </section>  
+  </section>
+
+  <!-- Botão flutuante do WhatsApp -->
+<a href="https://wa.me/5541992619813" target="_blank" id="whatsapp-float">
+  <img src="https://cdn.jsdelivr.net/gh/rafaelalmeidatk/whatsapp-float-icon@main/whatsapp-icon.png" alt="Fale conosco no WhatsApp">
+</a>
+
+<style>
+  #whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+  }
+
+  #whatsapp-float img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+  }
+
+  #whatsapp-float img:hover {
+    transform: scale(1.1);
+  }
+</style>  
   <!-- Formulário para Ofertas -->
   <section id="cadastro-promocoes">
   <h2>Receba Promoções e Novidades</h2>
