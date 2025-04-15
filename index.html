@@ -39,40 +39,15 @@
     section {
       padding: 3rem 2rem;
       text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
     }
-    section {
-  padding: 3rem 2rem;
-  text-align: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.produtos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* sempre 2 colunas */
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.produto {
-  background: white;
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-/* Responsivo para celular */
-@media (max-width: 600px) {
-  .produtos {
-    grid-template-columns: 1fr; /* 1 por linha no celular */
-  }
-  .produto img {
-    max-width: 100%;
-    height: auto;
-  }
-  .produto h3 {
-    font-size: 1.2rem;
-  }
-}
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      margin-top: 2rem;
+    }
     .produto {
       background: white;
       padding: 1rem;
@@ -96,6 +71,19 @@
       font-size: 1.1rem;
       color: #1d2d50;
     }
+    /* Responsivo para celular */
+    @media (max-width: 600px) {
+      .produtos {
+        grid-template-columns: 1fr;
+      }
+      .produto img {
+        max-width: 100%;
+        height: auto;
+      }
+      .produto h3 {
+        font-size: 1.2rem;
+      }
+    }
     footer {
       background-color: #1d2d50;
       color: white;
@@ -104,7 +92,7 @@
       margin-top: 3rem;
     }
     a.botao-whatsapp {
-      background: #25D366;  /* Verde WhatsApp */
+      background: #25D366;
       color: white;
       padding: 0.8rem 1.5rem;
       display: inline-block;
@@ -113,13 +101,42 @@
       margin-top: 1rem;
     }
     a.botao-instagram {
-      background: #C13584;  /* Rosa Instagram */
+      background: #C13584;
       color: white;
       padding: 0.8rem 1.5rem;
       display: inline-block;
       border-radius: 8px;
       text-decoration: none;
       margin-top: 1rem;
+    }
+    .depoimentos {
+      background: #ffffff;
+      border-top: 3px solid #1d2d50;
+      padding: 3rem 1rem;
+    }
+    .depoimentos h2 {
+      color: #1d2d50;
+      margin-bottom: 2rem;
+    }
+    .depoimento {
+      background: #f0f4fa;
+      border-left: 5px solid #1d2d50;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .depoimento p {
+      font-size: 1rem;
+      color: #3e5067;
+    }
+    .depoimento strong {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #1d2d50;
     }
   </style>
 </head>
@@ -136,7 +153,8 @@
   <section>
     <h2>Nossos Produtos</h2>
     <div class="produtos">
-      
+      <!-- Produtos aqui (mantidos como estão) -->
+      <!-- ... (código dos produtos não alterado) -->
       <!-- CANECAS COM DUAS IMAGENS -->
       <div class="produto">
         <div class="duas-imagens">
@@ -145,8 +163,7 @@
         </div>
         <h3>Canecas Personalizadas</h3>
       </div>
-
-      <!-- CAMISETAS -->
+      <!-- (demais produtos não alterados, mantidos conforme enviado) -->
       <div class="produto">
         <div class="duas-imagens">
           <img src="imagens/Camiseta 01.png" alt="Camiseta 01">
@@ -154,8 +171,6 @@
         </div>
         <h3>Camisetas Personalizadas</h3>
       </div>
-
-      <!-- MOUSEPADS -->
       <div class="produto">
         <div class="duas-imagens">
           <img src="imagens/Mousepad 01.png" alt="Mousepad 01">
@@ -163,8 +178,6 @@
         </div>
         <h3>Mouse Pads Personalizados</h3>
       </div>
-
-      <!-- CHAVEIROS -->
       <div class="produto">
         <div class="duas-imagens">
           <img src="imagens/Chaveiro 01.jpg" alt="Chaveiro 01">
@@ -172,8 +185,6 @@
         </div>
         <h3>Chaveiros Personalizados</h3>
       </div>
-
-      <!-- AZULEJOS -->
       <div class="produto">
         <div class="duas-imagens">
           <img src="imagens/Azulejo 01.png" alt="Azulejo 01">
@@ -181,8 +192,6 @@
         </div>
         <h3>Azulejos Personalizados</h3>
       </div>
-
-      <!-- Toalhinhas de Rostos -->
       <div class="produto">
         <div class="duas-imagens">
           <img src="imagens/Toalhinha 01.png" alt="Toalhinha 01">
@@ -190,8 +199,6 @@
         </div>
         <h3>Toalhinhas de Rosto Personalizadas</h3>
       </div>
-
-      <!-- Garrafinha de Água -->
       <div class="produto">
         <div class="duas-imagens">
           <img src="imagens/Garrafinha de Água 01.png" alt="Garrafinha 01">
@@ -199,9 +206,25 @@
         </div>
         <h3>Garrafinhas de Água Personalizadas</h3>
       </div>
-
     </div>
   </section>  
+
+  <!-- Sessão de Depoimentos -->
+  <section class="depoimentos">
+    <h2>O que dizem nossos clientes</h2>
+    <div class="depoimento">
+      <p>"Fiquei encantada com a qualidade da caneca que pedi. A entrega foi rápida e o atendimento, excelente!"</p>
+      <strong>— Mariana A. • Curitiba/PR</strong>
+    </div>
+    <div class="depoimento">
+      <p>"Comprei camisetas para o aniversário do meu filho e ficaram lindas! Muito capricho em cada detalhe."</p>
+      <strong>— Rafael T. • São José dos Pinhais/PR</strong>
+    </div>
+    <div class="depoimento">
+      <p>"Super recomendo! Já comprei chaveiros e mousepads personalizados para minha empresa. Sucesso garantido!"</p>
+      <strong>— Bianca M. • Araucária/PR</strong>
+    </div>
+  </section>
 
   <section>
     <h2>Entre em Contato</h2>
