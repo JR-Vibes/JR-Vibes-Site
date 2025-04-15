@@ -1,10 +1,8 @@
-         <div class="produtos">
-         <div style="display: flex; gap: 20px;">
-         <img src="imagens/Caneca 01.jpg" alt="Caneca Personalizada" width="200">
+<h3>Canecas Personalizadas</h3>
+    <div class="produtos">
+      <div style="display: flex; gap: 20px;">
+        <img src="imagens/Caneca 01.jpg" alt="Caneca Personalizada" width="200">
+        <img src="imagens/Caneca 02.jpg" alt="Caneca Personalizada" width="200">
         </div>
-        <div>
-         <img src="imagens/Caneca 02.jpg" alt="Caneca Personalizada" width="200">
-        </div>
-      </div>
     </section>
         <img src="imagens/Chaveiro 01.jpg" alt="Chaveiro personalizado" width="300">
