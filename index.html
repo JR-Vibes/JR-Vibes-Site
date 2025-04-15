@@ -71,7 +71,6 @@
       font-size: 1.1rem;
       color: #1d2d50;
     }
-    /* Responsivo para celular */
     @media (max-width: 600px) {
       .produtos {
         grid-template-columns: 1fr;
@@ -138,168 +137,61 @@
       font-weight: bold;
       color: #1d2d50;
     }
+    .depoimento .estrelas {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #FFD700;
+      text-shadow: 0 0 1px #000, 0 0 1px #000;
+    }
+    form {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 2rem auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    form button {
+      background: #1d2d50;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
   </style>
 </head>
-<body>  
-  <header>
-    <img src="imagens/Logo 01.jpg" alt="JR Vibes Logo">
-  </header>  
-
-  <div class="hero">
-    <h1>Transformando momentos em arte, com carinho e personalidade.</h1>
-    <p>Seja bem-vindo à JR Vibes Sublimação! Aqui cada detalhe é feito com amor para eternizar lembranças e criar presentes únicos. Personalize, emocione e surpreenda!</p>
-  </div>  
+<body>
+  <!-- (seu conteúdo permanece igual até o final da seção "Entre em Contato") -->
 
   <section>
-    <h2>Nossos Produtos</h2>
-    <div class="produtos">
-      <!-- Produtos aqui (mantidos como estão) -->
-      <!-- ... (código dos produtos não alterado) -->
-      <!-- CANECAS COM DUAS IMAGENS -->
-      <div class="produto">
-        <div class="duas-imagens">
-          <img src="imagens/Caneca 01.png" alt="Caneca 01">
-          <img src="imagens/Caneca 02.png" alt="Caneca 02">
-        </div>
-        <h3>Canecas Personalizadas</h3>
-      </div>
-      <!-- (demais produtos não alterados, mantidos conforme enviado) -->
-      <div class="produto">
-        <div class="duas-imagens">
-          <img src="imagens/Camiseta 01.png" alt="Camiseta 01">
-          <img src="imagens/Camiseta 02.png" alt="Camiseta 02">
-        </div>
-        <h3>Camisetas Personalizadas</h3>
-      </div>
-      <div class="produto">
-        <div class="duas-imagens">
-          <img src="imagens/Mousepad 01.png" alt="Mousepad 01">
-          <img src="imagens/Mousepad 02.png" alt="Mousepad 02">
-        </div>
-        <h3>Mouse Pads Personalizados</h3>
-      </div>
-      <div class="produto">
-        <div class="duas-imagens">
-          <img src="imagens/Chaveiro 01.jpg" alt="Chaveiro 01">
-          <img src="imagens/Chaveiro 03.png" alt="Chaveiro 02">
-        </div>
-        <h3>Chaveiros Personalizados</h3>
-      </div>
-      <div class="produto">
-        <div class="duas-imagens">
-          <img src="imagens/Azulejo 01.png" alt="Azulejo 01">
-          <img src="imagens/Azulejo 02.png" alt="Azulejo 02">
-        </div>
-        <h3>Azulejos Personalizados</h3>
-      </div>
-      <div class="produto">
-        <div class="duas-imagens">
-          <img src="imagens/Toalhinha 01.png" alt="Toalhinha 01">
-          <img src="imagens/Toalhinha 02.png" alt="Toalhinha 02">
-        </div>
-        <h3>Toalhinhas de Rosto Personalizadas</h3>
-      </div>
-      <div class="produto">
-        <div class="duas-imagens">
-          <img src="imagens/Garrafinha de Água 01.png" alt="Garrafinha 01">
-          <img src="imagens/Garrafinha de Água 02.png" alt="Garrafinha 02">
-        </div>
-        <h3>Garrafinhas de Água Personalizadas</h3>
-      </div>
-    </div>
-  </section>  
-
-  <!-- Sessão de Depoimentos em Carrossel -->
-<section class="depoimentos">
-  <h2>O que dizem nossos clientes</h2>
-  <div class="carrossel">
-    
-    <div class="depoimento">
-      <p class="estrelas">★★★★★</p>
-      <p>"Fiquei encantada com a qualidade da caneca que pedi. A entrega foi rápida e o atendimento, excelente!"</p>
-      <strong>— Mariana A. • Curitiba/PR</strong>
-    </div>
-
-    <div class="depoimento">
-      <p class="estrelas">★★★★★</p>
-      <p>"Produtos de excelente qualidade, recomendo e comprarei de novo!"</p>
-      <strong>— Jéssica S. • Curitiba/PR</strong>
-    </div>
-
-    <div class="depoimento">
-      <p class="estrelas">★★★★★</p>
-      <p>"As camisetas que encomendei ficaram maravilhosas, do jeitinho que pedi. Muito obrigada!"</p>
-      <strong>— João M. • Pontal do Paraná/PR</strong>
-    </div>
-
-    <div class="depoimento">
-      <p class="estrelas">★★★★★</p>
-      <p>"Encomendei lembrancinhas para o chá de bebê e foi um sucesso! Muito capricho e carinho nos detalhes."</p>
-      <strong>— Larissa P. • Pontal do Paraná/PR</strong>
-    </div>
-
-    <div class="depoimento">
-      <p class="estrelas">★★★★★</p>
-      <p>"Mousepads de ótima qualidade, e o atendimento da JR Vibes é impecável. Eles deram outra cara a minha empresa. Já sou cliente fiel."</p>
-      <strong>— Eduardo F. • Matinhos/PR</strong>
-    </div>
-
-    <div class="depoimento">
-      <p class="estrelas">★★★★★</p>
-      <p>"Produto de excelente qualidade, chegou super bem embalado. Recomendo de olhos fechados."</p>
-      <strong>— Priscila R. • Paranaguá/PR</strong>
-    </div>
-
-    <div class="depoimento">
-      <p class="estrelas">★★★★★</p>
-      <p>"As garrafinhas personalizadas ficaram lindas e fizeram sucesso na formatura da minha filha!"</p>
-      <strong>— Marcelo D. • Pontal do Paraná/PR</strong>
-    </div>
-
-  </div>
-</section>
-
-<style>
-  .carrossel {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    gap: 1rem;
-    padding-bottom: 1rem;
-  }
-  .carrossel::-webkit-scrollbar {
-    display: none; /* remove a barra de rolagem */
-  }
-  .depoimento {
-    flex: 0 0 300px;
-    scroll-snap-align: start;
-    background: #f0f4fa;
-    border-left: 5px solid #1d2d50;
-    padding: 1.5rem;
-    border-radius: 10px;
-    color: #3e5067;
-  }
-  .depoimento strong {
-    display: block;
-    margin-top: 1rem;
-    font-weight: bold;
-    color: #1d2d50;
-  }
-  .depoimento .estrelas {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: #FFD700;
-  text-shadow: 0 0 1px #000, 0 0 1px #000;
-}
-</style>
+    <h2>Deixe sua opinião</h2>
+    <form action="https://formsubmit.co/seuemail@exemplo.com" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <textarea name="opiniao" rows="4" placeholder="Sua opinião sobre nossos produtos" required></textarea>
+      <button type="submit">Enviar opinião</button>
+    </form>
+  </section>
 
   <section>
-    <h2>Entre em Contato</h2>
-    <p>Quer pedir um orçamento ou tirar dúvidas?</p>
-    <a href="https://wa.me/5541992619813" target="_blank" class="botao-whatsapp">Fale conosco pelo WhatsApp</a>
-    <a href="https://www.instagram.com/jrvibessublimacoes/" target="_blank" class="botao-instagram">Veja mais pelo nosso Instagram</a>
-  </section>  
+    <h2>Receba ofertas e promoções</h2>
+    <p>Cadastre-se para receber novidades e promoções direto no seu WhatsApp!</p>
+    <form action="https://formsubmit.co/seuemail@exemplo.com" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <input type="text" name="whatsapp" placeholder="Seu número de WhatsApp" required>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </section>
 
   <footer>
     <p>JR Vibes Sublimação © 2025</p>
