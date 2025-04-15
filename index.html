@@ -42,10 +42,23 @@
     }
     .produtos {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
       margin-top: 2rem;
-      justify-items: center;
+    }
+
+   @media (max-width: 600px) {
+   .produtos {
+     grid-template-columns: 1fr;
+   }
+  .produto img {
+    max-width: 100%;
+    height: auto;
+  }
+  .produto h3 {
+    font-size: 1.2rem;
+  }
+}
     }
     .produto {
       background: white;
