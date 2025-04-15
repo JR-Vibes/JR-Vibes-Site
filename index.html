@@ -209,22 +209,83 @@
     </div>
   </section>  
 
-  <!-- Sessão de Depoimentos -->
-  <section class="depoimentos">
-    <h2>O que dizem nossos clientes</h2>
+  <!-- Sessão de Depoimentos em Carrossel -->
+<section class="depoimentos">
+  <h2>O que dizem nossos clientes</h2>
+  <div class="carrossel">
+    
     <div class="depoimento">
+      <p class="estrelas">★★★★★</p>
       <p>"Fiquei encantada com a qualidade da caneca que pedi. A entrega foi rápida e o atendimento, excelente!"</p>
       <strong>— Mariana A. • Curitiba/PR</strong>
     </div>
+
     <div class="depoimento">
-      <p>"Comprei camisetas para o aniversário do meu filho e ficaram lindas! Muito capricho em cada detalhe."</p>
-      <strong>— Rafael T. • São José dos Pinhais/PR</strong>
+      <p class="estrelas">★★★★★</p>
+      <p>"As camisetas que encomendei ficaram maravilhosas, do jeitinho que pedi. Muito obrigada!"</p>
+      <strong>— João M. • Londrina/PR</strong>
     </div>
+
     <div class="depoimento">
-      <p>"Super recomendo! Já comprei chaveiros e mousepads personalizados para minha empresa. Sucesso garantido!"</p>
-      <strong>— Bianca M. • Araucária/PR</strong>
+      <p class="estrelas">★★★★★</p>
+      <p>"Encomendei lembrancinhas para o chá de bebê e foi um sucesso! Muito capricho e carinho nos detalhes."</p>
+      <strong>— Larissa P. • Florianópolis/SC</strong>
     </div>
-  </section>
+
+    <div class="depoimento">
+      <p class="estrelas">★★★★★</p>
+      <p>"Mousepads de ótima qualidade, e o atendimento da JR Vibes é impecável. Já sou cliente fiel."</p>
+      <strong>— Eduardo F. • São Paulo/SP</strong>
+    </div>
+
+    <div class="depoimento">
+      <p class="estrelas">★★★★★</p>
+      <p>"Produto de excelente qualidade, chegou super bem embalado. Recomendo de olhos fechados."</p>
+      <strong>— Priscila R. • Belo Horizonte/MG</strong>
+    </div>
+
+    <div class="depoimento">
+      <p class="estrelas">★★★★★</p>
+      <p>"As garrafinhas personalizadas ficaram lindas e fizeram sucesso no aniversário da minha filha!"</p>
+      <strong>— Marcelo D. • Joinville/SC</strong>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .carrossel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+  .carrossel::-webkit-scrollbar {
+    display: none; /* remove a barra de rolagem */
+  }
+  .depoimento {
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+    background: #f0f4fa;
+    border-left: 5px solid #1d2d50;
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: #3e5067;
+  }
+  .depoimento strong {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #1d2d50;
+  }
+  .depoimento .estrelas {
+    color: #FFD700;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+</style>
 
   <section>
     <h2>Entre em Contato</h2>
