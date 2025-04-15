@@ -1,6 +1,11 @@
-<header>
+</style>
+</head>
+<body>  
+  <header>
     <img src="imagens/Logotipo JR.jpg" alt="JR Vibes Logo">
   </header>  
+
+
 <h3>Canecas Personalizadas</h3>
     <div class="produtos">
       <div style="display: flex; gap: 20px;">
